@@ -1,5 +1,5 @@
 import re
-import Create_and_Write_to_file
+import User_File
 from Monthly_Budget import MonthBudget
 from Load_Data import read_data
 
@@ -43,7 +43,7 @@ def delete_item(item_list, i, list_type):
 
 def do_action(act, i, file_name):
     if act == 0:
-        Create_and_Write_to_file.create_new_user_file(file_name, month_list, budget_month_list)
+        User_File.create_new_user_file(file_name, month_list, budget_month_list)
         exit('Thank you and good bye!')
     elif act == 1:
         name = input("Income name: ")
